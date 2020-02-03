@@ -15,7 +15,7 @@ class LearnByTasks : ILearnKind{
     }
 
     override fun doLearn(view: ILearnKindView) {
-        view.onTasks()
+        view.onChoose(learnKind())
     }
 }
 
@@ -25,6 +25,6 @@ class LearnByDefs : ILearnKind{
     }
 
     override fun doLearn(view: ILearnKindView) {
-        view.onDefs()
+        view.onChoose(learnKind())
     }
 }

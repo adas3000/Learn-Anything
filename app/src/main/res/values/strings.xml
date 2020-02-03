@@ -19,5 +19,7 @@
         <item>Idealne i rzeczywiste źródło prądu</item>
     </string-array>
 
+    <string name="on_choose_learn_kind_text">choose_value</string>
+
 
 </resources>

@@ -1,8 +1,9 @@
 package pl.learn.anything.view
 
+import pl.learn.anything.enums.LearnKind
+
 interface ILearnKindView {
 
-    fun onTasks()
-    fun onDefs()
+    fun onChoose(learnKind: LearnKind)
 
 }
