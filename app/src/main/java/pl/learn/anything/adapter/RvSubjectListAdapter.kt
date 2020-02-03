@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import pl.learn.anything.R
+import pl.learn.anything.view.ISubjectListView
 
-class RvSubjectListAdapter(val subjectList:List<String>):RecyclerView.Adapter<RvSubjectListAdapter.ViewHolder>() {
+class RvSubjectListAdapter(val subjectList:List<String>,val view:ISubjectListView):RecyclerView.Adapter<RvSubjectListAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
         return subjectList.size
@@ -16,6 +17,10 @@ class RvSubjectListAdapter(val subjectList:List<String>):RecyclerView.Adapter<Rv
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.subjectName.setText(subjectList[position])
+
+        holder.subjectName.setOnClickListener {
+            view.onSubjectChoose(subjectList[position])
+        }
 
     }
 

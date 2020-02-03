@@ -10,26 +10,39 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_subject_list.*
 import pl.learn.anything.adapter.RvSubjectListAdapter
 import pl.learn.anything.enums.LearnKind
+import pl.learn.anything.view.ISubjectListView
 
-class SubjectListActivity : AppCompatActivity() {
+class SubjectListActivity : AppCompatActivity(), ISubjectListView {
+
+    private lateinit var learnKind: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subject_list)
 
-        val learnKind :LearnKind= LearnKind.valueOf(intent.getStringExtra(getString(R.string.on_choose_learn_kind_text)))
+        learnKind = intent.getStringExtra(getString(R.string.on_choose_learn_kind_text))
 
-        recyclerViewSubjects.layoutManager = LinearLayoutManager(this,RecyclerView.VERTICAL,false)
-        recyclerViewSubjects.adapter = RvSubjectListAdapter(resources.getStringArray(R.array.subjects_array_pl).toList())
-
+        recyclerViewSubjects.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        recyclerViewSubjects.adapter =
+            RvSubjectListAdapter(resources.getStringArray(R.array.subjects_array_pl).toList(), this)
 
 
     }
 
 
     override fun onBackPressed() {
-        startActivity(Intent(this,LearnKindActivity::class.java))
+        startActivity(Intent(this, LearnKindActivity::class.java))
         finish()
+    }
+
+    override fun onSubjectChoose(name: String) {
+
+        startActivity(Intent(this,LearnKindActivity::class.java).apply {
+            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind)
+            putExtra(getString(R.string.on_choose_learn_subject_text),name)
+        })
+        finish()
+
     }
 
 }

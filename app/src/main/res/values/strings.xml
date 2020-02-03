@@ -11,7 +11,7 @@
     </string-array>
 
 
-    <string-array name="electronic_defs_pl">
+    <string-array name="electronic_defs_name_pl">
         <item>Prawo Ohma</item>
         <item>I Prawo Kirchhoffa</item>
         <item>II Prawo Kirchhoffa</item>
@@ -19,7 +19,13 @@
         <item>Idealne i rzeczywiste źródło prądu</item>
     </string-array>
 
+    <string-array name="electronic_defs_pl">
+        <item>Jest czyms</item>
+    </string-array>
+
+
     <string name="on_choose_learn_kind_text">choose_value</string>
+    <string name="on_choose_learn_subject_text">subject_value</string>
 
 
 </resources>
