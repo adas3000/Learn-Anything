@@ -3,13 +3,10 @@ package pl.learn.anything
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_subject_list.*
 import pl.learn.anything.adapter.RvSubjectListAdapter
-import pl.learn.anything.enums.LearnKind
 import pl.learn.anything.view.ISubjectListView
 
 class SubjectListActivity : AppCompatActivity(), ISubjectListView {
@@ -37,7 +34,7 @@ class SubjectListActivity : AppCompatActivity(), ISubjectListView {
 
     override fun onSubjectChoose(name: String) {
 
-        startActivity(Intent(this,LearnKindActivity::class.java).apply {
+        startActivity(Intent(this,DefListActivity::class.java).apply {
             putExtra(getString(R.string.on_choose_learn_kind_text),learnKind)
             putExtra(getString(R.string.on_choose_learn_subject_text),name)
         })

@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LearnActivity"></activity>
+        <activity android:name=".DefListActivity" />
         <activity android:name=".SubjectListActivity" />
         <activity android:name=".LearnKindActivity">
             <intent-filter>

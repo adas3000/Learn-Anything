@@ -20,12 +20,16 @@
     </string-array>
 
     <string-array name="electronic_defs_pl">
-        <item>Jest czyms</item>
+        <item>
+            prawo fizyki głoszące proporcjonalność natężenia prądu płynącego przez przewodnik do napięcia
+            panującego między końcami przewodnika. Prawidłowość odkrył w latach 1825–1826 niemiecki nauczyciel matematyki,
+            późniejszy fizyk, profesor politechniki w Norymberdze i uniwersytetu w Monachium, Georg Simon Ohm.
+        </item>
     </string-array>
 
 
     <string name="on_choose_learn_kind_text">choose_value</string>
     <string name="on_choose_learn_subject_text">subject_value</string>
-
+    <string name="on_choose_def_text">def_value</string>
 
 </resources>
