@@ -2,4 +2,22 @@
     <string name="app_name">Learn Anything</string>
     <string name="menu_definctions_text_pl">Pojęcia</string>
     <string name="menu_tasks_text_pl">Zadania</string>
+
+
+    <string-array name="subjects_array_pl">
+        <item>Fizyka</item>
+        <item>Elektronika</item>
+        <item>Matematyka</item>
+    </string-array>
+
+
+    <string-array name="electronic_defs_pl">
+        <item>Prawo Ohma</item>
+        <item>I Prawo Kirchhoffa</item>
+        <item>II Prawo Kirchhoffa</item>
+        <item>Twierdzenie Thevenina</item>
+        <item>Idealne i rzeczywiste źródło prądu</item>
+    </string-array>
+
+
 </resources>
