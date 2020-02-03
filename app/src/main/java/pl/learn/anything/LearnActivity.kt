@@ -20,5 +20,6 @@ class LearnActivity : AppCompatActivity() {
 
         val subject :Subject= SubjectFactory(resources).createSubject(subjectName)
 
+
     }
 }
