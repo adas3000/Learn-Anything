@@ -15,6 +15,8 @@ class RvSubjectListAdapter(val subjectList:List<String>):RecyclerView.Adapter<Rv
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        holder.subjectName.setText(subjectList[position])
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

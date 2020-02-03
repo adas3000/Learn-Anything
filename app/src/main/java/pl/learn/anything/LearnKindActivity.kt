@@ -34,6 +34,7 @@ class LearnKindActivity : AppCompatActivity() , ILearnKindView {
         startActivity(Intent(this,SubjectListActivity::class.java).apply {
             putExtra(getString(R.string.on_choose_learn_kind_text),learnKind.toString())
         })
+        finish()
 
     }
 
