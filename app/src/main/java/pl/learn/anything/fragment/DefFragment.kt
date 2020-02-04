@@ -10,10 +10,17 @@ import pl.learn.anything.R
 class DefFragment : Fragment() {
 
 
+
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.layout_def_body,container,false)
     }
 
+    override fun onStart() {
+        super.onStart()
+
+
+    }
 
 
 

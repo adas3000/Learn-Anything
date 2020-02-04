@@ -43,15 +43,19 @@ class DefListActivity : AppCompatActivity() , IDefListView {
     override fun onDefChoose(position: Int) {
 
         startActivity(Intent(this,SingleDefActivity::class.java).apply {
-            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind)
+            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind.toString())
             putExtra(getString(R.string.on_choose_learn_subject_text),subjectName)
+            putExtra(getString(R.string.def_body_text),defsbodyList[position])
         })
         finish()
 
     }
 
     override fun onBackPressed() {
-
+        startActivity(Intent(this,SubjectListActivity::class.java).apply {
+            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind.toString())
+        })
+        finish()
     }
 
 }
