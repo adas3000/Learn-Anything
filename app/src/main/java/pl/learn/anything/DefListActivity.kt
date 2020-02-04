@@ -21,6 +21,7 @@ class DefListActivity : AppCompatActivity() , IDefListView {
     private lateinit var subjectName:String
     private lateinit var subject:Subject
     private lateinit var defsbodyList:List<String>
+    private lateinit var defsimgbodyList:List<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,11 +34,13 @@ class DefListActivity : AppCompatActivity() , IDefListView {
         subject = SubjectFactory(resources).createSubject(subjectName)
         val defList:List<String> = DefListFactory().createDefList(learnKind,subject)
 
-        defsbodyList = DefBodyListFactory().createBodyList(learnKind,subject)
+        val defBodyListFactory = DefBodyListFactory()
+        defsbodyList = defBodyListFactory.createBodyList(learnKind,subject)
+        defsimgbodyList = defBodyListFactory.createImgList(learnKind,subject)
+
 
         recyclerViewDef.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
         recyclerViewDef.adapter = RvDefsListAdapter(defList,this)
-
     }
 
     override fun onDefChoose(position: Int) {
@@ -46,6 +49,7 @@ class DefListActivity : AppCompatActivity() , IDefListView {
             putExtra(getString(R.string.on_choose_learn_kind_text),learnKind.toString())
             putExtra(getString(R.string.on_choose_learn_subject_text),subjectName)
             putExtra(getString(R.string.def_body_text),defsbodyList[position])
+            putExtra(getString(R.string.def_img_text),defsimgbodyList[position])
         })
         finish()
 

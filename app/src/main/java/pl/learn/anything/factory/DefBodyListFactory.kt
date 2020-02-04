@@ -15,5 +15,13 @@ class DefBodyListFactory {
         else throw NoClassDefFoundError("no_such_learnkind")
     }
 
+    fun createImgList(learnKind: LearnKind,subject: Subject):List<String>{
+
+        if(learnKind==LearnKind.Definitions)
+            return subject.getImgDefsList()
+        else if(learnKind==LearnKind.Tasks)
+            return subject.getImgDefsList()
+        else throw NoClassDefFoundError("no_such_learnkind")
+    }
 
 }
