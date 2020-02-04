@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_def_list.*
 import pl.learn.anything.adapter.RvDefsListAdapter
 import pl.learn.anything.enums.LearnKind
+import pl.learn.anything.factory.DefBodyListFactory
 import pl.learn.anything.factory.DefListFactory
 import pl.learn.anything.factory.SubjectFactory
 import pl.learn.anything.model.Subject
@@ -19,6 +20,7 @@ class DefListActivity : AppCompatActivity() , IDefListView {
     private lateinit var learnKind: LearnKind
     private lateinit var subjectName:String
     private lateinit var subject:Subject
+    private lateinit var defsbodyList:List<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +33,8 @@ class DefListActivity : AppCompatActivity() , IDefListView {
         subject = SubjectFactory(resources).createSubject(subjectName)
         val defList:List<String> = DefListFactory().createDefList(learnKind,subject)
 
+        defsbodyList = DefBodyListFactory().createBodyList(learnKind,subject)
+
         recyclerViewDef.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
         recyclerViewDef.adapter = RvDefsListAdapter(defList,this)
 
@@ -39,7 +43,9 @@ class DefListActivity : AppCompatActivity() , IDefListView {
 
     override fun onDefChoose(position: Int) {
 
-        Toast.makeText(this,subject.getDefsBodyItem(position),Toast.LENGTH_LONG).show()
+
+        Toast.makeText(this,defsbodyList[position],Toast.LENGTH_SHORT).show()
+
 //
 //        startActivity(Intent(this,LearnActivity::class.java).apply {
 //            putExtra(getString(R.string.on_choose_def_text),subject.getDefsBodyItem(position))

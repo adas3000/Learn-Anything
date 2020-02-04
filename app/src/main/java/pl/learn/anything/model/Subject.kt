@@ -6,7 +6,8 @@ import pl.learn.anything.R
 interface Subject {
 
     fun getDefsList():List<String>
-    fun getDefsBodyItem(position:Int):String
+    fun getDefsBodyItem():List<String>
+    fun getTasksBody():List<String>
     fun getTasksList():List<String>
 
 }
@@ -19,8 +20,12 @@ class Electronic : Subject{
         this.resources = resources
     }
 
-    override fun getDefsBodyItem(position: Int): String {
-        return resources.getStringArray(R.array.electronic_defs_pl)[position] //todo update to return also tasks
+    override fun getDefsBodyItem(): List<String> {
+        return resources.getStringArray(R.array.electronic_defs_pl).toList() //todo update to return also tasks
+    }
+
+    override fun getTasksBody(): List<String> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun getDefsList(): List<String> {
@@ -40,7 +45,11 @@ class Physics : Subject{
         this.resources = resources
     }
 
-    override fun getDefsBodyItem(position: Int): String {
+    override fun getDefsBodyItem(): List<String> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getTasksBody(): List<String> {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
