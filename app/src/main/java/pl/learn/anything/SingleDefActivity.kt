@@ -21,7 +21,7 @@ class SingleDefActivity : AppCompatActivity() {
         defBody = intent.getStringExtra(getString(R.string.def_body_text))
 
         if(learnKind==LearnKind.Definitions){
-            val fragment = DefFragment()
+            val fragment = DefFragment.newInstance(defBody)
             val ft = supportFragmentManager.beginTransaction()
             ft.replace(R.id.SingleDefActivityFrameLayout,fragment)
             ft.commit()

@@ -10,7 +10,7 @@
         <item>Matematyka</item>
     </string-array>
 
-
+<!--electronic-->
     <string-array name="electronic_defs_name_pl">
         <item>Prawo Ohma</item>
         <item>I Prawo Kirchhoffa</item>
@@ -21,16 +21,27 @@
 
     <string-array name="electronic_defs_pl">
         <item>
-            prawo fizyki głoszące proporcjonalność natężenia prądu płynącego przez przewodnik do napięcia
-            panującego między końcami przewodnika. Prawidłowość odkrył w latach 1825–1826 niemiecki nauczyciel matematyki,
-            późniejszy fizyk, profesor politechniki w Norymberdze i uniwersytetu w Monachium, Georg Simon Ohm.
+            Prawo to wiąże prąd i napięcie z rezystancją rezystora.\n
+            I=U/R I[A]=U[V]/R[Ω] R[Ω]=U[V]/I[A]\n
+            I - natężenie prądu płynącego przez rezystor wyrażone w Amperach A\n
+            U - napięcie przyłożone do rezystora wyrażone w woltach V\n
+            R - rezystancja rezystora wyrażona w Omach Ω\n
         </item>
     </string-array>
+
+    <string-array name="electronic_defs_pics">
+        <item>ohm</item>
+        <item>IKirchoff</item>
+        <item>IIKirchoff</item>
+    </string-array>
+
+
 
 
     <string name="on_choose_learn_kind_text">choose_value</string>
     <string name="on_choose_learn_subject_text">subject_value</string>
     <string name="on_choose_def_text">def_value</string>
     <string name="def_body_text">def_body</string>
+    <string name="images_folder_name_text">drawable</string>
 
 </resources>
