@@ -22,7 +22,7 @@ class Electronic : Subject{
     }
 
     override fun getDefsBodyItem(): List<String> {
-        return resources.getStringArray(R.array.electronic_defs_pl).toList() //todo update to return also tasks
+        return resources.getStringArray(R.array.electronic_defs_pl).toList()
     }
 
     override fun getTasksBody(): List<String> {
@@ -51,7 +51,7 @@ class Physics : Subject{
     }
 
     override fun getDefsBodyItem(): List<String> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return resources.getStringArray(R.array.physics_defs_pl).toList()
     }
 
     override fun getTasksBody(): List<String> {
@@ -59,7 +59,7 @@ class Physics : Subject{
     }
 
     override fun getDefsList(): List<String> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return resources.getStringArray(R.array.physics_defs_name_pl).toList()
     }
 
     override fun getTasksList(): List<String> {
@@ -67,7 +67,7 @@ class Physics : Subject{
     }
 
     override fun getImgDefsList(): List<String> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return resources.getStringArray(R.array.physics_defs_pics).toList()
     }
 
 }

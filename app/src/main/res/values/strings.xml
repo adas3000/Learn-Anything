@@ -10,7 +10,7 @@
         <item>Matematyka</item>
     </string-array>
 
-<!--electronic-->
+    <!--electronic-->
     <string-array name="electronic_defs_name_pl">
         <item>Prawo Ohma</item>
         <item>I Prawo Kirchhoffa</item>
@@ -18,8 +18,9 @@
         <item>Twierdzenie Thevenina</item>
         <item>Idealne i rzeczywiste źródło prądu</item>
     </string-array>
-
+    <!--electronic defs-->
     <string-array name="electronic_defs_pl">
+        <!--ohm-->
         <item>
             Prawo to wiąże prąd i napięcie z rezystancją rezystora.\n
             I=U/R I[A]=U[V]/R[Ω] R[Ω]=U[V]/I[A]\n
@@ -27,24 +28,84 @@
             U - napięcie przyłożone do rezystora wyrażone w woltach V\n
             R - rezystancja rezystora wyrażona w Omach Ω\n
         </item>
-
+        <!--        IKirchoff-->
         <item>
             Suma prądów wpływających do węzła sieci równa się sumie prądów wypływających z węzła sieci.
         </item>
-
+        <!--        IIKirchoff-->
         <item>
             Suma napięć źródłowych w oczku sieci równa się sumie spadków napięć odbiornikowych w oczku sieci.
         </item>
+        <!--        TwThev.-->
+        <item>
+            Dowolny układ można od strony zacisków AB zastąpić układem złożonym z idealnego źródła
+            napięcia, o wartości napięcia panującego na zaciskach AB w stanie jałowym ( bez obciążenia)
+            oraz z rezystancji zastępczej widzianej z zacisków AB (w stanie jałowym) po zwarciu
+            wszystkich źródeł napięcia i rozwarciu wszystkich źródeł prądu.
+        </item>
+        <!--idealne i rzeczy.-->
+        <item>
 
+        </item>
     </string-array>
 
     <string-array name="electronic_defs_pics">
         <item>ohm</item>
         <item>ikichoff</item>
-        <item>IIKirchoff</item>
+        <item>iikirchoff</item>
+        <item>thevenin</item>
+        <item>iirzp</item>
     </string-array>
 
 
+    <!--    physics-->
+    <string-array name="physics_defs_name_pl">
+        <item>Pierwsza zasada dynamiki Newtona</item>
+        <item>Druga zasada dynamiki Newtona</item>
+        <item>Trzecia zasada dynamiki Newtona</item>
+        <item>Prezentacja analitycznia i graficzna równania ruchu oraz zależności czasowych prędkości i przyśpieszenia w ruchu jednostajnie przyspieszonym jednowymiarowym</item>
+    </string-array>
+
+    <string-array name="physics_defs_pl">
+        <!--INewton-->
+        <item>
+            Jeżeli na ciało nie działają siły zewnętrzne,
+            lub działające siły równoważą się,
+            to ciało pozostaje w spoczynku, lub porusza się ruchem jednostajnym prostoliniowym.
+            F=m*g, gdzie\n
+            F- siła [N]\n
+            m- masa ciała [kg]\n
+            g- przyspieszenie ziemskie [N/kg]\n
+            Zastosowanie np.Kulka leżąca na stole
+        </item>
+        <!--        IINewton-->
+        <item>
+            Przyspieszenie ciała jest wprost proporcjonalne do działającej na nie siły i odwrotnie proporcjonalne do jego masy.\n
+            Prawo to można wyrazić równaniem: siła jest równa masie pomnożonej przez przyspieszenie ( F = ma).
+
+        </item>
+        <!--        IIINetwon-->
+        <item>
+            Każda akcja wywołuje równą jej i przeciwnie skierowaną reakcję. \n
+            Prawo powszechnego ciążenia Newtona stwierdza, że między dwoma ciałami działa siła przyciągająca, proporcjonalna
+            do ich mas i odwrotnie proporcjonalna do kwadratu odległości między nimi.
+        </item>
+<!--        ruch jednostanie przyszp.-->
+        <item>
+            Ruch –zmiana położenia jednych ciał względem innych,które nazywamy układem odniesienia.
+            Prędkość - zmiana odległości w jednostce czasu.
+            Przyśpieszenie - to tempo zmian prędkości przyśpieszenie jednostajne a = v-v0/t
+        </item>
+    </string-array>
+
+
+    <string-array name="physics_defs_pics">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 
 
     <string name="on_choose_learn_kind_text">choose_value</string>
