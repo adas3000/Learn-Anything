@@ -1,22 +1,22 @@
 <resources>
     <string name="app_name">Learn Anything</string>
-    <string name="menu_definctions_text_pl">Teoretyczne zagadnienia</string>
-    <string name="menu_tasks_text_pl">Zadania</string>
+    <string name="menu_definctions_text_pl">Theoretical issues</string>
+    <string name="menu_tasks_text_pl">Tasks</string>
 
 
     <string-array name="subjects_array">
-        <item>Fizyka</item>
-        <item>Elektronika</item>
-        <item>Matematyka</item>
+        <item>Physics</item>
+        <item>Electronic</item>
+        <item>Math</item>
     </string-array>
 
     <!--electronic-->
     <string-array name="electronic_defs_name">
-        <item>Prawo Ohma</item>
-        <item>I Prawo Kirchhoffa</item>
-        <item>II Prawo Kirchhoffa</item>
-        <item>Twierdzenie Thevenina</item>
-        <item>Idealne i rzeczywiste źródło prądu</item>
+        <item>Ohm law</item>
+        <item>I Kirchhoff Law</item>
+        <item>II Kirchhoff Law</item>
+        <item>Thevenin theorem</item>
+        <item>An ideal and real power source</item>
     </string-array>
     <!--electronic defs-->
     <string-array name="electronic_defs">

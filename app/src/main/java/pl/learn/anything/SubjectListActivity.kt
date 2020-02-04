@@ -1,6 +1,7 @@
 package pl.learn.anything
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_subject_list.*
 import pl.learn.anything.adapter.RvSubjectListAdapter
 import pl.learn.anything.view.ISubjectListView
+import java.util.*
 
 class SubjectListActivity : AppCompatActivity(), ISubjectListView {
 
@@ -21,7 +23,7 @@ class SubjectListActivity : AppCompatActivity(), ISubjectListView {
 
         recyclerViewSubjects.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         recyclerViewSubjects.adapter =
-            RvSubjectListAdapter(resources.getStringArray(R.array.subjects_array_pl).toList(), this)
+            RvSubjectListAdapter(resources.getStringArray(R.array.subjects_array).toList(), this)
 
 
     }

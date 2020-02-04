@@ -22,7 +22,7 @@ class Electronic : Subject{
     }
 
     override fun getDefsBodyItem(): List<String> {
-        return resources.getStringArray(R.array.electronic_defs_pl).toList()
+        return resources.getStringArray(R.array.electronic_defs).toList()
     }
 
     override fun getTasksBody(): List<String> {
@@ -30,7 +30,7 @@ class Electronic : Subject{
     }
 
     override fun getDefsList(): List<String> {
-        return resources.getStringArray(R.array.electronic_defs_name_pl).toList()
+        return resources.getStringArray(R.array.electronic_defs_name).toList()
     }
 
     override fun getImgDefsList(): List<String> {
@@ -51,7 +51,7 @@ class Physics : Subject{
     }
 
     override fun getDefsBodyItem(): List<String> {
-        return resources.getStringArray(R.array.physics_defs_pl).toList()
+        return resources.getStringArray(R.array.physics_defs).toList()
     }
 
     override fun getTasksBody(): List<String> {
@@ -59,7 +59,7 @@ class Physics : Subject{
     }
 
     override fun getDefsList(): List<String> {
-        return resources.getStringArray(R.array.physics_defs_name_pl).toList()
+        return resources.getStringArray(R.array.physics_defs_name).toList()
     }
 
     override fun getTasksList(): List<String> {

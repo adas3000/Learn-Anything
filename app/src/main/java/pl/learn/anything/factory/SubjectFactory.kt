@@ -14,7 +14,7 @@ class SubjectFactory {
 
     constructor(resources: Resources) {
         this.resources = resources
-        this.subjects = resources.getStringArray(R.array.subjects_array_pl).toList()
+        this.subjects = resources.getStringArray(R.array.subjects_array).toList()
     }
 
     fun createSubject(subject:String):Subject{

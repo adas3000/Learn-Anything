@@ -11,12 +11,14 @@ import pl.learn.anything.presenter.ILearnKindPresenter
 import pl.learn.anything.presenter.LearnKindPresenter
 import pl.learn.anything.view.ILearnKindView
 
+
 class LearnKindActivity : AppCompatActivity() , ILearnKindView {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learn_kind)
+
 
         val presenter:ILearnKindPresenter = LearnKindPresenter(this)
 
