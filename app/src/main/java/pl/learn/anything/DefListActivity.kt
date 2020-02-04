@@ -40,19 +40,17 @@ class DefListActivity : AppCompatActivity() , IDefListView {
 
     }
 
-
     override fun onDefChoose(position: Int) {
 
+        startActivity(Intent(this,SingleDefActivity::class.java).apply {
+            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind)
+            putExtra(getString(R.string.on_choose_learn_subject_text),subjectName)
+        })
+        finish()
 
-        Toast.makeText(this,defsbodyList[position],Toast.LENGTH_SHORT).show()
+    }
 
-//
-//        startActivity(Intent(this,LearnActivity::class.java).apply {
-//            putExtra(getString(R.string.on_choose_def_text),subject.getDefsBodyItem(position))
-//            putExtra(getString(R.string.on_choose_learn_kind_text),learnKind)
-//            putExtra(getString(R.string.on_choose_learn_subject_text),subjectName)
-//        })
-//        finish()
+    override fun onBackPressed() {
 
     }
 
