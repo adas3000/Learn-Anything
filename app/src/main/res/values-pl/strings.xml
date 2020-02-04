@@ -64,6 +64,7 @@
         <item>Druga zasada dynamiki Newtona</item>
         <item>Trzecia zasada dynamiki Newtona</item>
         <item>Prezentacja analitycznia i graficzna równania ruchu oraz zależności czasowych prędkości i przyśpieszenia w ruchu jednostajnie przyspieszonym jednowymiarowym</item>
+        <item>Prezentacja analityczna i graficzna równania ruchu oraz zależności czasowych prędkości i przyspieszenia w ruchu jednostajnym jednowymiarowym</item>
     </string-array>
 
     <string-array name="physics_defs">
@@ -92,9 +93,20 @@
         </item>
 <!--        ruch jednostanie przyszp.-->
         <item>
+            <p>
             Ruch –zmiana położenia jednych ciał względem innych,które nazywamy układem odniesienia.
             Prędkość - zmiana odległości w jednostce czasu.
-            Przyśpieszenie - to tempo zmian prędkości przyśpieszenie jednostajne a = v-v0/t
+            Przyśpieszenie - to tempo zmian prędkości\n przyśpieszenie jednostajne a = v-v<sub>0</sub>/t
+            </p>
+        </item>
+<!--        ruch jednostanie i przsp.-->
+        <item>
+            <p>
+            Ruch –zmiana położenia jednych ciał względem innych,które nazywamy układem odniesienia.\n
+            Prędkość - zmiana odległości w jednostce czasu.\n
+            Przyśpieszenie - to tempo zmian prędkości\n
+            Prędkość w ruchu jednostajnym - v = x-x<sub>0</sub>/t-t<sub>0</sub>
+            </p>
         </item>
     </string-array>
 
