@@ -27,11 +27,20 @@
             U - napięcie przyłożone do rezystora wyrażone w woltach V\n
             R - rezystancja rezystora wyrażona w Omach Ω\n
         </item>
+
+        <item>
+            Suma prądów wpływających do węzła sieci równa się sumie prądów wypływających z węzła sieci.
+        </item>
+
+        <item>
+            Suma napięć źródłowych w oczku sieci równa się sumie spadków napięć odbiornikowych w oczku sieci.
+        </item>
+
     </string-array>
 
     <string-array name="electronic_defs_pics">
         <item>ohm</item>
-        <item>IKirchoff</item>
+        <item>ikichoff</item>
         <item>IIKirchoff</item>
     </string-array>
 
