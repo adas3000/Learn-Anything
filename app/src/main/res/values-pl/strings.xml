@@ -65,6 +65,7 @@
         <item>Trzecia zasada dynamiki Newtona</item>
         <item>Prezentacja analitycznia i graficzna równania ruchu oraz zależności czasowych prędkości i przyśpieszenia w ruchu jednostajnie przyspieszonym jednowymiarowym</item>
         <item>Prezentacja analityczna i graficzna równania ruchu oraz zależności czasowych prędkości i przyspieszenia w ruchu jednostajnym jednowymiarowym</item>
+        <item>Ruch ciała rzuconego pod kątem do horyzontu:opis analityczny i graficzny</item>
     </string-array>
 
     <string-array name="physics_defs">
@@ -108,6 +109,11 @@
             Prędkość w ruchu jednostajnym - v = x-x<sub>0</sub>/t-t<sub>0</sub>
             </p>
         </item>
+
+        <item>
+
+        </item>
+
     </string-array>
 
 

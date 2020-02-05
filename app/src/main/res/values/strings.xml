@@ -22,26 +22,26 @@
     <string-array name="electronic_defs">
         <!--ohm-->
         <item>
-            Prawo to wiąże prąd i napięcie z rezystancją rezystora.\n
+            This law associates current and voltage with a resistor resistance.\n
             I=U/R I[A]=U[V]/R[Ω] R[Ω]=U[V]/I[A]\n
-            I - natężenie prądu płynącego przez rezystor wyrażone w Amperach A\n
-            U - napięcie przyłożone do rezystora wyrażone w woltach V\n
-            R - rezystancja rezystora wyrażona w Omach Ω\n
+            I - current flowing through the resistor expressed in Amps A\n
+            U - voltage applied to the resistor expressed in volts V\n
+            R - resistor resistance expressed in Ohms Ω\n
         </item>
         <!--        IKirchoff-->
         <item>
-            Suma prądów wpływających do węzła sieci równa się sumie prądów wypływających z węzła sieci.
+            The sum of the currents flowing into the network node equals the sum of the currents flowing from the network node.
         </item>
         <!--        IIKirchoff-->
         <item>
-            Suma napięć źródłowych w oczku sieci równa się sumie spadków napięć odbiornikowych w oczku sieci.
+            The sum of the source voltages in the grid mesh equals the sum of the decreases in the receiver voltages in the grid mesh.
         </item>
         <!--        TwThev.-->
         <item>
-            Dowolny układ można od strony zacisków AB zastąpić układem złożonym z idealnego źródła
-            napięcia, o wartości napięcia panującego na zaciskach AB w stanie jałowym ( bez obciążenia)
-            oraz z rezystancji zastępczej widzianej z zacisków AB (w stanie jałowym) po zwarciu
-            wszystkich źródeł napięcia i rozwarciu wszystkich źródeł prądu.
+            Any system can be replaced from the side of the AB terminals with a system composed of an ideal source
+            voltage, with the voltage prevailing on the AB terminals in idle state (without load)
+            and from the equivalent resistance seen from the AB terminals (in idle state) after a short circuit
+            all voltage sources and all current sources open.
         </item>
         <!--idealne i rzeczy.-->
         <item>
@@ -60,50 +60,56 @@
 
     <!--    physics-->
     <string-array name="physics_defs_name">
-        <item>Pierwsza zasada dynamiki Newtona</item>
-        <item>Druga zasada dynamiki Newtona</item>
-        <item>Trzecia zasada dynamiki Newtona</item>
-        <item>Prezentacja analitycznia i graficzna równania ruchu oraz zależności czasowych prędkości i przyśpieszenia w ruchu jednostajnie przyspieszonym jednowymiarowym</item>
-        <item>Prezentacja analityczna i graficzna równania ruchu oraz zależności czasowych prędkości i przyspieszenia w ruchu jednostajnym jednowymiarowym</item>
+        <item>Newton first law of dynamics</item>
+        <item>Newton second law of dynamics</item>
+        <item>Newton third law of dynamics</item>
+        <item>Analytical and graphic presentation of the equation of motion as well as the time dependence of velocity and acceleration in uniformly accelerated one-dimensional motion</item>
+        <item>Analytical and graphical presentation of the equation of motion and time dependence of velocity and acceleration in uniform one-dimensional motion</item>
+        <item>Movement of the body projected at an angle to the horizon: analytical and graphic description</item>
     </string-array>
 
     <string-array name="physics_defs">
         <!--INewton-->
         <item>
-            Jeżeli na ciało nie działają siły zewnętrzne,
-            lub działające siły równoważą się,
-            to ciało pozostaje w spoczynku, lub porusza się ruchem jednostajnym prostoliniowym.
-            F=m*g, gdzie\n
-            F- siła [N]\n
-            m- masa ciała [kg]\n
-            g- przyspieszenie ziemskie [N/kg]\n
-            Zastosowanie np.Kulka leżąca na stole
+            If the body is not affected by external forces,
+            or acting forces balance,
+            this body remains at rest or moves in a uniform, straight motion.
+            F=m*g, where\n
+            F- force [N]\n
+            m- body weight [kg]\n
+            g- gravitational acceleration [N/kg]\n
+            Application e.g. ball lying on the table
         </item>
         <!--        IINewton-->
         <item>
-            Przyspieszenie ciała jest wprost proporcjonalne do działającej na nie siły i odwrotnie proporcjonalne do jego masy.\n
-            Prawo to można wyrazić równaniem: siła jest równa masie pomnożonej przez przyspieszenie ( F = ma).
-
+            The acceleration of the body is directly proportional to the force acting on it and inversely proportional to its mass.\n
+            This law can be expressed by the equation: force is equal to mass multiplied by acceleration (F = ma).
         </item>
         <!--        IIINetwon-->
         <item>
-            Każda akcja wywołuje równą jej i przeciwnie skierowaną reakcję. \n
-            Prawo powszechnego ciążenia Newtona stwierdza, że między dwoma ciałami działa siła przyciągająca, proporcjonalna
-            do ich mas i odwrotnie proporcjonalna do kwadratu odległości między nimi.
+            Each action evokes an equal and opposite reaction.\
+            Newton law of universal gravitation states that there is an attractive, proportional force between the two bodies\
+            to their masses and inversely proportional to the square of the distance between them.
         </item>
 <!--        ruch jednostanie przyszp.-->
         <item>
-            Ruch –zmiana położenia jednych ciał względem innych,które nazywamy układem odniesienia.
-            Prędkość - zmiana odległości w jednostce czasu.
-            Przyśpieszenie - to tempo zmian prędkości przyśpieszenie jednostajne a = v-v0/t
+            Motion - changing the position of one body relative to another, which we call the reference system.\n
+            Speed ​​- change of distance in a unit of time.\n
+            Acceleration - is the rate of change of speed uniform acceleration a = v-v0/t
         </item>
 
         <item>
-            Ruch –zmiana położenia jednych ciał względem innych,które nazywamy układem odniesienia.\n
-            Prędkość - zmiana odległości w jednostce czasu.\n
-            Przyśpieszenie - to tempo zmian prędkości\n
-            Prędkość w ruchu jednostajnym - v = x-x<sub>0</sub>/t-t<sub>0</sub>
+            Motion - changing the position of one body relative to another, which we call the reference system. \n
+            Speed ​​- change of distance in a unit of time. \ n
+            Acceleration - is the rate of speed change \ n
+            Speed ​​in steady motion - v = x-x<sub>0</sub>/t-t<sub>0</sub>
         </item>
+
+        <item>
+
+        </item>
+
+
     </string-array>
 
 
